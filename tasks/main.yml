@@ -59,7 +59,8 @@
     update_repo_cache: true
     create_namespace: true
     values:
-      strategy: Recreate
+      strategy:
+        type: Recreate
       hostNetwork: true
       podSecurityContext:
         sysctls:
