@@ -59,9 +59,8 @@
     update_repo_cache: true
     create_namespace: true
     values:
-      strategy:
-        type: Recreate
-      hostNetwork: true
+      service:
+        type: LoadBalancer
       podSecurityContext:
         sysctls:
         - name: net.ipv4.ping_group_range
