@@ -55,10 +55,11 @@
     name: prometheus-blackbox-exporter
     chart_ref: prometheus-community/prometheus-blackbox-exporter
     release_namespace: prometheus
-    wait: True
+    wait: true
     update_repo_cache: true
     create_namespace: true
     values:
+      strategy: Recreate
       hostNetwork: true
       podSecurityContext:
         sysctls:
