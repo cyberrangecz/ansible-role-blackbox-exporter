@@ -1,6 +1,10 @@
 galaxy_info:
-  role_name: prometheus
+  role_name: blackbox-exporter
   author: Tomas Sapak (139890@muni.cz)
-  description: Role for setting up node-exporter
+  description: Role for setting up blackbox-exporter
   company: Masaryk university
   galaxy_tags: []
+dependencies:
+  - src: git@gitlab.ics.muni.cz:cerit-public/ansible-roles/k3s.git
+    version: master
+    name: k3s
